@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <BorderPane layoutX="-7.0" prefHeight="630.0" prefWidth="816.0">
+         <top>
+            <Pane prefHeight="87.0" prefWidth="378.0" style="-fx-background-color: #F5FFFA;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="115.0" layoutY="23.0" text="Welcome" textFill="LIGHTSEAGREEN">
+                     <font>
+                        <Font name="Bauhaus 93" size="36.0" />
+                     </font>
+                  </Label>
+                  
+               </children>
+               <BorderPane.margin>
+                  <Insets left="223.0" right="215.0" />
+               </BorderPane.margin>
+            </Pane>
+         </top>
+         <left>
+            <Pane prefHeight="423.0" prefWidth="223.0" style="-fx-background-color: #008080;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="23.0" layoutY="160.0" text="Schedule:" textFill="MINTCREAM" />
+                  <DatePicker fx:id="datePicker" layoutX="22.0" layoutY="184.0" style="-fx-background-color: #F5FFFA;" />
+                  <Label layoutX="20.0" layoutY="311.0" text="Train:" textFill="MINTCREAM" />
+                  <ComboBox fx:id="comboBox" layoutX="20.0" layoutY="338.0" prefHeight="27.0" prefWidth="186.0" style="-fx-background-color: #F5FFFA;" />
+                  <Button fx:id="btn" layoutX="17.0" layoutY="378.0" mnemonicParsing="false" onAction="#getToa" onMouseExited="#searchTrainExited" onMouseMoved="#searchTrainMoved" style="-fx-background-color: #F5FFFA;" text="Search" textFill="TEAL">
+                     <font>
+                        <Font name="Barlow Condensed SemiBold" size="13.0" />
+                     </font></Button>
+                  <Button layoutX="21.0" layoutY="221.0" mnemonicParsing="false" onAction="#getTau" style="-fx-background-color: #F5FFFA;" text="Search Date" textFill="TEAL">
+                     <font>
+                        <Font name="Barlow Condensed SemiBold" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="btnsreachts" layoutX="46.0" layoutY="510.0" mnemonicParsing="false" onAction="#SearchTrainStation" onMouseExited="#searchGaExited" onMouseMoved="#searchGaMoved" style="-fx-background-color: #F5FFFA;" text="Search Train Station" textFill="TEAL">
+                     <font>
+                        <Font name="Barlow Condensed SemiBold" size="16.0" />
+                     </font></Button>
+                  <ImageView fitHeight="87.0" fitWidth="185.0" layoutX="26.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/xoay.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnSearchTic" layoutX="44.0" layoutY="562.0" mnemonicParsing="false" onAction="#SearchTicket" onMouseExited="#searchTicketExited" onMouseMoved="#searchTicketMoved" prefHeight="32.0" prefWidth="138.0" style="-fx-background-color: #F5FFFA;" text="Booked Tickets" textFill="TEAL">
+                     <font>
+                        <Font name="Barlow Condensed SemiBold" size="16.0" />
+                     </font></Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="-51.0" top="-89.0" />
+               </BorderPane.margin>
+            </Pane>
+         </left>
+         <bottom>
+            <Pane prefHeight="50.0" prefWidth="666.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <GridPane fx:id="grid" alignment="TOP_CENTER" prefHeight="433.0" prefWidth="376.0" style="-fx-background-color: #F5FFFA;" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <BorderPane.margin>
+                  <Insets bottom="-50.0" />
+               </BorderPane.margin>
+            </GridPane>
+         </center>
+         <right>
+            <Pane prefHeight="460.0" prefWidth="215.0" style="-fx-background-color: #008080;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="14.0" layoutY="172.0" text="Seats:" textFill="MINTCREAM" />
+                  <Label layoutX="11.0" layoutY="235.0" text="Price:" textFill="MINTCREAM" />
+                  <Label layoutX="12.0" layoutY="282.0" text="Name:" textFill="MINTCREAM" />
+                  <Label layoutX="12.0" layoutY="335.0" prefHeight="17.0" prefWidth="27.0" text="Sex:" textFill="MINTCREAM" />
+                  <Label layoutX="13.0" layoutY="395.0" text="Phone:" textFill="MINTCREAM" />
+                  <Label layoutX="12.0" layoutY="448.0" text="Address:" textFill="MINTCREAM" />
+                  <TextField fx:id="txtseats" disable="true" layoutX="13.0" layoutY="197.0" style="-fx-background-color: #F5FFFA;" />
+                  <TextField fx:id="txtprice" disable="true" layoutX="13.0" layoutY="252.0" style="-fx-background-color: #F5FFFA;" />
+                  <TextField fx:id="txtname" layoutX="13.0" layoutY="299.0" style="-fx-background-color: #F5FFFA;" />
+                  <ComboBox fx:id="sex" layoutX="13.0" layoutY="352.0" prefHeight="27.0" prefWidth="163.0" style="-fx-background-color: #F5FFFA;" />
+                  <TextField fx:id="txtphone" layoutX="13.0" layoutY="412.0" style="-fx-background-color: #F5FFFA;" />
+                  <TextField fx:id="txtaddress" layoutX="13.0" layoutY="465.0" style="-fx-background-color: #F5FFFA;" />
+                  <Button fx:id="btnpay" layoutX="17.0" layoutY="504.0" mnemonicParsing="false" onAction="#pay" onMouseExited="#payTicketExited" onMouseMoved="#payMoved" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: #F5FFFA;" text="Pay" textFill="TEAL">
+                     <font>
+                        <Font name="Barlow Condensed SemiBold" size="15.0" />
+                     </font></Button>
+                  <ImageView fitHeight="88.0" fitWidth="207.0" layoutX="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/unnamed.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="txtstation" disable="true" layoutX="13.0" layoutY="131.0" style="-fx-background-color: #F5FFFA;" />
+                  <Label layoutX="14.0" layoutY="114.0" text="Station:" textFill="MINTCREAM" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="-51.0" top="-89.0" />
+               </BorderPane.margin>
+            </Pane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
