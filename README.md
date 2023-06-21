@@ -3,4 +3,4 @@
 
 Chương trình quảng lý vé tàu RMI
 
-Lê Quốc Huy - Huỳnh Thị Yến Linh
+Lê Quốc Huy
