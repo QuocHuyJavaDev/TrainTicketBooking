@@ -11,9 +11,9 @@ Java RMI (Remote Method Invocation) is a mechanism in Java that allows objects i
 
 ## Demo
 
-https://user-images.githubusercontent.com/119832071/247811769-158c8996-6cec-4082-aac5-8fbca9f3eaf2.png
+![](https://user-images.githubusercontent.com/119832071/247811769-158c8996-6cec-4082-aac5-8fbca9f3eaf2.png)
 
-https://user-images.githubusercontent.com/119832071/247811769-158c8996-6cec-4082-aac5-8fbca9f3eaf2.png
+![](https://user-images.githubusercontent.com/119832071/247811809-1baad460-9937-44dd-b3f9-77be2092c907.png)
 
 ## Getting Started
 
